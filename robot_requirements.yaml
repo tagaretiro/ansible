@@ -1,0 +1,13 @@
+- name: Install Requirements for CAIP Robot Testing
+  host: localhost
+  apt: name={{ item }} state=installed
+  with_items:
+    - wheel
+    - robotframework
+    - robotframework-selenium2library
+    - configparser
+    - colorama
+    - cryptography
+    - robotframework-testrail
+  tags:
+    - packages
