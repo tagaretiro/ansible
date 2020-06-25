@@ -1,5 +1,5 @@
-- name: Install Requirements for Threat Landscape
-  host: all
+- name: "Install Requirements for Threat Landscape"
+  hosts: all
   apt: name={{ item }} state=installed
   with_items:
     - django
