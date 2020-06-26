@@ -5,11 +5,11 @@
   - name: Get uptime first
   shell: uptime
   register: hello
-  - debug: msg="{{ hello.stdout }}"
-  - debug: msg="{{ hello.stderr }}"
+  - debug: msg='{{ hello.stdout }}'
+  - debug: msg='{{ hello.stderr }}'
 
   - name: Get date second
   shell: date
   register: hello
-  - debug: msg="{{ hello.stdout }}"
-  - debug: msg="{{ hello.stderr }}"
+  - debug: msg='{{ hello.stdout }}'
+  - debug: msg='{{ hello.stderr }}'
