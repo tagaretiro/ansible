@@ -4,6 +4,6 @@
   - name: Install Requirements
     apt: 
       name: ['django', 'django_select2', 'pymongo', 'django_crispy_forms', 'pprint', 'pillow', 'django-ckeditor', 'reportlab', 'bs4', 'apscheduler', 'pysmb', 'urllib3', 'lxml']
-      state: installed
+      state: latest
     tags:
       - packages
