@@ -3,5 +3,5 @@
   tasks:
   - name: Install Requirements
     apt: 
-      name: ['python3-django', 'django-select2', 'pymongo', 'django-crispy-forms', 'pprint', 'pillow', 'django-ckeditor', 'reportlab', 'bs4', 'apscheduler', 'pysmb', 'urllib3', 'lxml']
+      name: ['python3-django', 'Django-Select2-Py3', 'pymongo', 'django-crispy-forms', 'pprint', 'pillow', 'django-ckeditor', 'reportlab', 'bs4', 'apscheduler', 'pysmb', 'urllib3', 'lxml']
       state: latest
