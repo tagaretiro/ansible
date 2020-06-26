@@ -3,21 +3,7 @@
   tasks:
   - name: Install Requirements
     apt: 
-      name: '{{ item }}'
+      name: ['django', 'django_select2', 'pymongo', 'django_crispy_forms', 'pprint', 'pillow', 'django-ckeditor', 'reportlab', 'bs4', 'apscheduler', 'pysmb', 'urllib3', 'lxml']
       state: installed
-    with_items:
-      - django
-      - django_select2
-      - pymongo
-      - django_crispy_forms
-      - pprint
-      - pillow
-      - django-ckeditor
-      - reportlab
-      - bs4
-      - apscheduler
-      - pysmb
-      - urllib3
-      - lxml
     tags:
       - packages
