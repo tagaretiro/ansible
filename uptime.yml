@@ -4,4 +4,4 @@
   tasks:
   - shell: uptime
     register: hello
-  - debug: msg='{{hello.stdout_line}}'
+  - debug: msg='{{hello.stdout_lines}}'
