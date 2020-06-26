@@ -1,20 +1,23 @@
 - name: Install Requirements for Threat Landscape
-  apt: 
-    name: '{{ item }}'
-    state: installed
-  with_items:
-    - django
-    - django_select2
-    - pymongo
-    - django_crispy_forms
-    - pprint
-    - pillow
-    - django-ckeditor
-    - reportlab
-    - bs4
-    - apscheduler
-    - pysmb
-    - urllib3
-    - lxml
-  tags:
-    - packages
+  hosts: all
+  tasks:
+  - name: Install Requirements
+    apt: 
+      name: '{{ item }}'
+      state: installed
+    with_items:
+      - django
+      - django_select2
+      - pymongo
+      - django_crispy_forms
+      - pprint
+      - pillow
+      - django-ckeditor
+      - reportlab
+      - bs4
+      - apscheduler
+      - pysmb
+      - urllib3
+      - lxml
+    tags:
+      - packages
