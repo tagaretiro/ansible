@@ -1,7 +1,8 @@
-- name: "Checkout Git"
+- name: "Git Pull"
   hosts: all
   tasks:
-  - git:
-      repo: 'https://github.trendmicro.com/CoreTech-FRSQA/threatlandscape.git'
-      dest: /home/devopsteam/ansible_test
-      version: master
+  - shell:
+      cmd: git -c http.proxy= pull origin master
+      chdir: /home/devopsteam/ansible_test/threatlandscape
+      args:
+        executable: /usr/bin/git
