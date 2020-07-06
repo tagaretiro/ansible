@@ -4,5 +4,3 @@
   - shell:
       cmd: git -c http.proxy= pull origin master
       chdir: /home/devopsteam/ansible_test/threatlandscape
-      args:
-        executable: /usr/bin/git
